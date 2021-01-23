@@ -97,6 +97,7 @@ header .c1{
     flex: 1 1 0%;
     text-align: center;
     z-index: 300;
+    line-height: 2.0;
 }
 
 header .c2{
@@ -256,9 +257,9 @@ nav a.active {
     height: 93vh; /* vh is percent of viewport */
     width: 100%;
     background-image:url(images/ElectricThunderSpread_hero.png);
-    background-image:url(images/BandSpread1_NoBG.png);
+    background-image:url(images/012221-07717.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     position: relative;
 }
 
@@ -423,10 +424,11 @@ section h2 {
     display: inline-flex;
     background-size: cover;
     background-position: center center;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: 30px;
-    border: ridge 2px gray;
+/*    border: ridge 2px gray;*/
+    box-shadow: 3px 4px 10px black;
 }
 
 #Music {
@@ -435,129 +437,17 @@ section h2 {
     width: 100%;
 }
 
-.player {
-    width: 300px;
-    height: 300px;
-    border: 2px black solid;
-    transition: .2s all;
+
+#IllFlyAway {
+    background-image:url(images/1000x1000bb.webp);
 }
 
-.showPlayerBg {
-    background-color: rgba(20,2,50,0.7);
-    transition: .2s all;   
+#ICanLive {
+    background-image: url(images/AlbumArt_ICanLive.jpg);
 }
 
-.songTitle {
-    position: relative;
-    font-size: 28px;
-    margin: 0;
-    top: 5px;
-}
-
-.defaultBar {
-    width: 300px;
-    display: block;
-    background-color: #606060;
-    height: 15px;
-    position: relative;
-    bottom: 88px;
-    right: 3.75px;
-    z-index: 5;
-}
-
-.progressBar {
-    width: 0px;
-    height: 15px;
-    background-color: aliceblue;
-    z-index: 10;
-}
-
-.buttons {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    text-align:center;
-    top: 50px;
-}
-
-.buttons button {
-    background-color: var(--color5);
-    background-color: aliceblue;
-    border-radius: 50%;
-    padding: 12px;
-    margin: 0 15px;
-    transition: .1s all;
-}
-
-.hidden {
-    opacity: 0;
-}
-
-.play {
-    font-size: 28px;
-    transform: scale(2.5);
-}
-
-.play.idlePlay {
-    color: rgba(250,250,250, 1);
-    background-color: rgba(0,0,0,.2);
-    border-color: grey;
-}
-
-/*
-#currentTime, #fullDuration {
-    z-index: 8;
-    position: relative;
-    bottom: 110px;
-}
-*/
-
-.timeDisplay {
-    z-index: 8;
-    position: relative;
-    bottom: 110px;
-}
-
-.play:hover {
-    cursor: pointer;
-    background-color: black;
-    color: aliceblue;
-    transform: scale(2.7);
-    transition: .2s all;
-}
-
-.next:hover, .pre:hover {
-    cursor: pointer;
-    background-color: black;
-    color: aliceblue;
-    transform: scale(1.2);
-    transition: .2s all;
-}
-
-.next {
-    position: relative;
-    left: 15px;
-    top: 50px;
-}
-
-.pre {
-    position: relative;
-    right: 15px;
-    top: 50px;
-}
-
-
-
-#solaris {
-    background-image:url(images/AlbumArt_Solaris.png);
-}
-
-#blackswan {
-    background-image: url(images/AlbumArt_BlackSwanFallenAngels.png);
-}
-
-#hotelofglass {
-    background-image: url(images/AlbumArt_HotelofGlassBodyAgainstMind.png);
+#DecentHeartedMan {
+    background-image: url(images/AlbumArt_DecentHeartedMan.webp);
 }
 
 .card {
@@ -619,12 +509,13 @@ a.bit-button.bit-track-button.bit-offers {
     transition: .3s all;
     background-color: aliceblue;
     color: black;
-    font-size: 24px;
-    letter-spacing: 2px;
-    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 5px;
+    line-height: 1;
+    letter-spacing: 0px;
+    border-radius: 5px;
     font-family: 'Knewave';
     width: 150px;
-    padding: 2px;
     text-transform: none;
     
 }
@@ -661,13 +552,13 @@ a.bit-button.bit-track-button.bit-offers:hover {
 
 .profile-pic {
     display: inline-block;
-    background-image: url(images/ArtistImage.jpg);
+    background-image: url(images/012221-07663.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     height: 40vh;
     width: 40vh;
     float: left;
-    margin-right: 10px;    
+    margin-right: 32px;    
 }
 
 #About {

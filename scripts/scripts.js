@@ -129,3 +129,10 @@ $(window).on('load', function() {
     $('.loader-bg').delay(350).fadeOut('slow');
     $('body').delay(350).css({'overflow':'visible'});
 });
+
+$('.slick').slick({
+    infinite: true,
+    fade: true,
+    dots: true,
+    autoplay: true,
+});
