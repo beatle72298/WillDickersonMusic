@@ -134,5 +134,5 @@ $('.slick').slick({
     infinite: true,
     fade: true,
     dots: true,
-    autoplay: true,
+    //autoplay: true,
 });

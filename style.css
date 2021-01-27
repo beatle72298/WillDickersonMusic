@@ -6,6 +6,7 @@ audio {
 }
 
 :root {
+/*
     --color1: #00334A;
     --color2: #004666;
     --color3: #1A607F;
@@ -14,13 +15,21 @@ audio {
     --bg: #00334A;
     --dark: #00334A;
     --light: #4691B2;
+*/
+    --color1: black;
+    --color2: black;
+    --d1: 'Righteous';
+    --d2: 'Alfa Slab One';
+    --d3: 'Sigmar One';
+    --d4: 'Bungee Inline';
+    --d5: 'Spicy Rice';
+    --d6: 'Lobster';
+    --d7: 'Nosifer';
+    --d8: 'Trade Winds';
+    --p1: 'Josefin Slab';
+    --p2: 'Faustina';
 }
 
-
-@font-face {
-    font-family: theZains;
-    src: url(fonts/theZains.ttf);
-}
 
 * {
     box-sizing: border-box;
@@ -32,15 +41,22 @@ body{
     width:100%;
 /*    background-color: #00334A;*/
     color: aliceblue;
-    font-family: 'Knewave', cursive;
-    background-image: url(images/ElectricThunderSpread_hero.png);
+    font-family: var(--d8);
+    background-image: url(images/bg-wood.jpg);
     background-attachment: fixed;
     
 }
 
+header{
+    color: gold;
+}
+
+h1,h2, nav ul {color:gold !important;}
+
 section h2 {
     font-size: 32px;
     margin-top: 0px;
+    color: gold;
 }
 
 ol, ul{
@@ -129,7 +145,6 @@ header .c3{
 }
 
 .c1 h2 {
-    font-family: theZains;
     font-size: 28px;
     z-index: 204;
 }
@@ -148,7 +163,7 @@ nav ul{
     z-index: 201;
     margin: 0;
     padding: 0;
-    background-color: #00334A;
+    background-color: var(--color1);
     color:aliceblue;
     font-size: 20px;
     width: 100%;
@@ -174,7 +189,7 @@ nav li a{
 }
 
 nav a:hover{
-    background-color: black;
+    background-color: darkgoldenrod;
     transition: 0.3 all;
 }
 
@@ -207,12 +222,12 @@ nav.sticky {
 .header-shrink {
     z-index: 500;
     transition: linear .3s all;
-    background-color: #00334A;
+    background-color: var(--color1);
     padding: 20px;
 }
 
 .header-shrink .c1 h2{
-    font-size: 22px;
+    font-size: 24px;
     transition: .3s all;
 }
 
@@ -245,7 +260,8 @@ nav a.active {
 }
 
 .active {
-    background-color: black;
+    background-color: gold;
+    color: black;
 }
 
 
@@ -257,7 +273,7 @@ nav a.active {
     height: 93vh; /* vh is percent of viewport */
     width: 100%;
     background-image:url(images/ElectricThunderSpread_hero.png);
-    background-image:url(images/012221-07717.jpg);
+/*    background-image:url(images/012221-07717.jpg);*/
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -274,17 +290,20 @@ nav a.active {
 }
 */
 
+@keyframes bg-color{
+    from{background-color: darkblue;}
+    to{background-color: darkgoldenrod;}
+}
+
 .hero-bg {
     z-index: 1;
     width: 100%;
     height: 100%;
-}
-
-.flora{
-    background: url(vid/flora.mp4);
-    width: 100%;
-    background-size: cover;
-    
+    animation-name: bg-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
  .layer-2 {
@@ -295,8 +314,8 @@ nav a.active {
     background-position: center center;
     position: relative;
     bottom: 93vh;
-    mix-blend-mode: hard-light;
-    animation-name: glow;
+    mix-blend-mode: difference;
+    background-image:url(images/012221-07717.jpg);
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -327,15 +346,15 @@ i#down-arrow.fas.fa-angle-double-down {
 .down-arrow i{
     display: block;
     font-size: 56px;
-    color: #00334A;
+    color: gold;
     opacity: .7;
     text-shadow: 1px 5px 2px black;
     transition: 0.3s all;
 }
 
 i#down-arrow.fas.fa-angle-double-down:hover {
-    color: aliceblue;
-    text-shadow: 1px 5px 5px black;
+    color: black;
+    text-shadow: 1px 2px 8px aliceblue;
     transition: 0.3s all;
 }
 
@@ -357,6 +376,7 @@ i#down-arrow.fas.fa-angle-double-down:hover {
 
 .container {
     background-color: rgba(0, 70, 102, 0.7);
+    background-color: var(--color2);
     max-width:75%;
     padding: 40px;
     margin: 10vh auto;
@@ -416,17 +436,47 @@ section h2 {
 --------MUSIC SECTION---------
 ------------------------------*/
 
-#album-grid {
-    flex-wrap: wrap;
+.meta{
+    text-align: center;
+    line-height: 2;
+}
+
+.album-info{
+    width: 100%;
+    font-size: 28px;
+    text-align: left;
+    margin: : 0;
+}
+
+.meta h2{font-size: 24px; text-decoration: underline;}
+
+.links{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.links i{
+    font-size: 48px;
+}
+
+.links a{
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.music-btn:hover{
+    transition: .2s all linear;
+    color: goldenrod;
+/*    text-shadow: 1px 1px 5px aliceblue;*/
 }
 
 .album-art {
-    display: inline-flex;
+/*    display: inline-flex;*/
     background-size: cover;
     background-position: center center;
     height: 400px;
     width: 400px;
-    margin: 30px;
+/*    margin: 30px;*/
 /*    border: ridge 2px gray;*/
     box-shadow: 3px 4px 10px black;
 }
@@ -437,6 +487,14 @@ section h2 {
     width: 100%;
 }
 
+.slick{
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 10% auto auto 10%;
+}
 
 #IllFlyAway {
     background-image:url(images/1000x1000bb.webp);
@@ -498,10 +556,13 @@ section h2 {
 #Live h2{
     text-align: center;
 }
+/*#live-section{height: auto;}*/
 
+/*
 .bandsintown-widget {
     height: 50vh;
 }
+*/
 
 a.bit-button.bit-track-button.bit-offers {
     margin-top: 40px;
@@ -534,6 +595,44 @@ a.bit-button.bit-track-button.bit-offers:hover {
     transition: .3s all;
 }
 
+a.bit-offers.bit-button{background-color: darkgoldenrod;border: 1px solid darkgoldenrod;
+font-family: var(--d8);
+font-weight: 500 !important;
+letter-spacing: 1px;
+}
+
+a.bit-rsvp.bit-button{
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    font-family: var(--d8);
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+}
+
+a.bit-play-my-city-button{
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod !important;
+    font-family: var(--d8);
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    background-color: darkgoldenrod !important;
+}
+a.bit-details{
+    font-family: var(--p1);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.bit-widget .bit-venue{
+    color: gold !important;
+}
+
+a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-button:hover{
+    letter-spacing: 2px;
+    background-color: goldenrod !important;
+    color: black;
+    transition: .3s linear all;
+}
 
 /*---------------------------
 ---------ABOUT SECTION-------
@@ -544,10 +643,10 @@ a.bit-button.bit-track-button.bit-offers:hover {
 }
 
 #About p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--p1);
     font-size: 20px;
     line-height: 2;
-    
+    font-weight: 600;
 }
 
 .profile-pic {
@@ -730,7 +829,7 @@ div.clear {
 
 footer {
     height: 10vh;
-    background-color: #00334A;
+    background-color: black;
     padding: 20px 0px;
 }
 
