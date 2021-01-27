@@ -17,7 +17,8 @@ audio {
     --light: #4691B2;
 */
     --color1: black;
-    --color2: black;
+    --color2: rgb(0, 0, 0, .8);
+    --color3: rgb(3, 60, 220, .9);
     --d1: 'Righteous';
     --d2: 'Alfa Slab One';
     --d3: 'Sigmar One';
@@ -42,9 +43,9 @@ body{
 /*    background-color: #00334A;*/
     color: aliceblue;
     font-family: var(--d8);
-    background-image: url(images/bg-wood.jpg);
+    background-image: url(images/bg-bourbon.jpg);
     background-attachment: fixed;
-    
+    background-size: cover;
 }
 
 header{
@@ -380,7 +381,7 @@ i#down-arrow.fas.fa-angle-double-down:hover {
     max-width:75%;
     padding: 40px;
     margin: 10vh auto;
-    
+    border-radius: 10px;
 }
 
 .hero-email {
@@ -631,7 +632,7 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
     letter-spacing: 2px;
     background-color: goldenrod !important;
     color: black;
-    transition: .3s linear all;
+    transition: .2s linear all;
 }
 
 /*---------------------------
@@ -680,7 +681,9 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 #main-content {
     padding: 20px 0px;
     margin: 0 0;
-    background-color: rgba(0, 51, 74, 0.5)}
+    background-color: rgba(0, 51, 74, 0.5);
+    background-color: rgb(3, 60, 220, .4);
+}
 
 /*---------CONTACT SECTION------------------
 -------------------------------------------
