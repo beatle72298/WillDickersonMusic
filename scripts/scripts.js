@@ -132,7 +132,7 @@ $(window).on('load', function() {
 
 $('.slick').slick({
     infinite: true,
-    fade: true,
+//    fade: true,
     dots: true,
-    //autoplay: true,
+    autoplay: true,
 });

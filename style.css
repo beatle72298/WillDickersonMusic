@@ -36,6 +36,8 @@ audio {
     box-sizing: border-box;
 }
 
+a:focus, .slick:focus, .slick div:focus{outline: none;}
+
 body{
     margin:0;
     padding: 0;
@@ -465,6 +467,10 @@ section h2 {
     text-align: center;
 }
 
+.music-btn{
+    transition: .2s all linear;
+}
+
 .music-btn:hover{
     transition: .2s all linear;
     color: goldenrod;
@@ -655,7 +661,7 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
     background-image: url(images/012221-07663.jpg);
     background-size: cover;
     background-position: top center;
-    height: 40vh;
+    height: 50vh;
     width: 40vh;
     float: left;
     margin-right: 32px;    
@@ -681,8 +687,8 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 #main-content {
     padding: 20px 0px;
     margin: 0 0;
-    background-color: rgba(0, 51, 74, 0.5);
-    background-color: rgb(3, 60, 220, .4);
+/*    background-color: rgba(0, 51, 74, 0.5);*/
+    background-color: rgb(3, 60, 220, 0.3);
 }
 
 /*---------CONTACT SECTION------------------
@@ -705,8 +711,8 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 }
 
 .email a:hover {
-    color: black;
-    text-shadow: 1px 5px 8px white;
+    color: goldenrod;
+    text-shadow: 1px 1px 15px white;
     transition: .3s all;
 }
 
