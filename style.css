@@ -330,7 +330,7 @@ nav a.active {
     position: absolute;
      top: 0;
 
-    background-image:url(images/Untitled-2.png);
+    background-image:url(images/Hero-NoBG.png);
 /*     mix-blend-mode: luminosity;*/
      filter: grayscale(100%);
 /*     background-color: blue;*/
