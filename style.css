@@ -919,6 +919,27 @@ footer span{
 
 /*----------------------------------------
 --------------Media Quieries---------------*/
+@media screen and (max-width: 1400px){
+    .album-art{
+        height: 300px;
+        width: 300px;
+    }
+    .grid{
+        grid-template-columns: unset;
+        display: block;
+    }
+    .album-info span{
+        display: block;
+    }
+    
+    .album-info{
+        text-align: center;
+    }
+    .meta{line-height: 1; }
+    .meta h2{ margin-bottom: 0;}
+}
+
+
 @media screen and (max-width: 700px) {
     body {
         width: 100%;
