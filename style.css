@@ -319,10 +319,21 @@ nav a.active {
     bottom: 93vh;
     mix-blend-mode: difference;
     background-image:url(images/012221-07717.jpg);
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+}
+
+ .layer-3 {
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+     top: 0;
+/*    bottom: 93vh;*/
+/*    top: 0;*/
+    background-image:url(images/012221-07717.jpg);
+     mix-blend-mode: difference;
+     background-color: blue;
 }
 
 /*
