@@ -331,10 +331,12 @@ nav a.active {
      top: 0;
 
     background-image:url(images/Untitled-2.png);
-     mix-blend-mode: difference;
+/*     mix-blend-mode: luminosity;*/
+     filter: grayscale(100%);
 /*     background-color: blue;*/
 }
 
+/*
  .layer-4 {
     z-index: 4;
     height: inherit;
@@ -344,9 +346,10 @@ nav a.active {
     position: absolute;
      top: 0px;
     background-image:url(images/Untitled-2.png);
-/*     mix-blend-mode: darken;*/
-/*     background-color: blue;*/
+     mix-blend-mode: overlay;
+     background-color: blue;
 }
+*/
 
 /*
 .scene {
