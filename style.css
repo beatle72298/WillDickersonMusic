@@ -41,7 +41,7 @@ a:focus, .slick:focus, .slick div:focus{outline: none;}
 body{
     margin:0;
     padding: 0;
-    width:100%;
+    width:100vw;
 /*    background-color: #00334A;*/
     color: aliceblue;
     font-family: var(--d8);
@@ -103,6 +103,7 @@ i {
     transition: 0.2s all;
     margin: 0 auto;
     align-items: baseline;
+    justify-content: center;
 }
 
 #header-bar a:hover {
@@ -116,21 +117,24 @@ header .c1{
     flex: 1 1 0%;
     text-align: center;
     z-index: 300;
-    line-height: 2.0;
+    padding: 0px 20px;
+/*    line-height: 2.0;*/
 }
 
 header .c2{
     order: 3;
-    flex: 1 1 0%;
-    text-align: right;
+/*    flex: 1 1 0%;*/
+    text-align: center;
     margin-right: 10px;
+    padding: 1vw;
+    
 }
 
 header .c3{
     order: 1;
-    flex: 1 1 0%;
-    text-align: left;
-    margin-left: 10px;
+/*    flex: 1 1 0%;*/
+/*    text-align: left;*/
+/*    margin-left: 10px;*/
 }
 
 #social-bar li{
@@ -152,8 +156,14 @@ header .c3{
     z-index: 204;
 }
 
+.c1 h2 a{white-space: nowrap;}
+
 #subscribe-icon {
     font-size: 28px;
+}
+
+#icons{
+    justify-content: unset;
 }
 
 /*---------------------------
@@ -923,6 +933,7 @@ footer span{
     .album-art{
         height: 300px;
         width: 300px;
+        display: inline-block;
     }
     .grid{
         grid-template-columns: unset;
@@ -999,6 +1010,7 @@ footer span{
     .email a{
         font-size: 16px;
     }
+    #music-cont{padding: 40px 0px;}
 }
 
 @media screen and (max-width: 600px){
@@ -1075,6 +1087,8 @@ footer span{
     .email i {
         font-size: 100%;
     }
+    
+    
 
 }
 @media screen and (max-width: 400px){
