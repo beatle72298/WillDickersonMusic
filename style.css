@@ -294,7 +294,7 @@ nav a.active {
 */
 
 @keyframes bg-color{
-    from{background-color: darkblue;}
+    from{background-color: darkgreen;}
     to{background-color: darkgoldenrod;}
 }
 
@@ -314,26 +314,38 @@ nav a.active {
     height: inherit;
     background-image:url(images/BandSpread1_NoBG.png);
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     position: relative;
     bottom: 93vh;
     mix-blend-mode: difference;
-    background-image:url(images/012221-07717.jpg);
+    background-image:url(images/012221-07717_Compressed.png);
 }
 
  .layer-3 {
     z-index: 3;
-    height: 100vh;
-    width: 100vw;
+    height: inherit;
+    width: 100%;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     position: absolute;
      top: 0;
-/*    bottom: 93vh;*/
-/*    top: 0;*/
-    background-image:url(images/012221-07717.jpg);
+
+    background-image:url(images/Untitled-2.png);
      mix-blend-mode: difference;
-     background-color: blue;
+/*     background-color: blue;*/
+}
+
+ .layer-4 {
+    z-index: 4;
+    height: inherit;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+     top: 0px;
+    background-image:url(images/Untitled-2.png);
+/*     mix-blend-mode: darken;*/
+/*     background-color: blue;*/
 }
 
 /*
