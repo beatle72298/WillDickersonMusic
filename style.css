@@ -41,7 +41,7 @@ a:focus, .slick:focus, .slick div:focus{outline: none;}
 body{
     margin:0;
     padding: 0;
-    width:100vw;
+    width:100%;
 /*    background-color: #00334A;*/
     color: aliceblue;
     font-family: var(--d8);
@@ -94,7 +94,7 @@ i {
 
 #header-bar {
     z-index: 202;
-    min-height: 50px;
+    min-height: 100px;
     padding: 1.5rem 2rem;
     position: fixed;
     top: 0;
@@ -102,8 +102,8 @@ i {
     text-shadow: 5px 2px 15px black;
     transition: 0.2s all;
     margin: 0 auto;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #header-bar a:hover {
@@ -114,7 +114,7 @@ i {
 
 header .c1{
     order: 2;
-    flex: 1 1 0%;
+/*    flex: 1 1 0%;*/
     text-align: center;
     z-index: 300;
     padding: 0px 20px;
@@ -126,7 +126,7 @@ header .c2{
 /*    flex: 1 1 0%;*/
     text-align: center;
     margin-right: 10px;
-    padding: 1vw;
+/*    padding: 1vw;*/
     
 }
 
@@ -135,16 +135,17 @@ header .c3{
 /*    flex: 1 1 0%;*/
 /*    text-align: left;*/
 /*    margin-left: 10px;*/
+    margin-left: 10px;
 }
 
 #social-bar li{
     margin: 0 10px;
-    font-size: 32px;
+/*    font-size: 32px;*/
 }
 
 #social-bar {
     position: relative;
-    left: 20%;
+/*    left: 20%;*/
 }
 
 #social-bar li:last-child{
@@ -551,44 +552,9 @@ section h2 {
     background-image: url(images/AlbumArt_DecentHeartedMan.webp);
 }
 
-.card {
-    box-shadow: 2px 4px 15px 0 black;
-    padding: 10px;
-    margin: 20px 20px;
-    text-align: center;
-}
-
-.link-bar {
-    position: relative;
-    right: 20px;
-    align-items: center;
-}
-
-.link-bar li{
-    margin: 10px 10px;
-    flex: auto;
-    display: inline-block;
-    text-align: justify;
-}
-
-.link-bar li{
-    display:inline-block;
-    text-align: center;
-}
-
-.link-bar i {
-    font-size: 40px;
-}
-
-.link-bar a {
-    text-shadow: 5px 2px 15px black;
-    transition: 0.2s all;
-}
-
-.link-bar a:hover {
-    color: black;
-    text-shadow: 5px 2px 15px aliceblue;
-    transition: 0.2s all;
+.slick-dots li button:before{
+    color: white !important;
+    font-size: 12px !important;
 }
 
 
@@ -893,22 +859,29 @@ footer span{
     width: 100%;
     height: 100%;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader {
     z-index: 100000;
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #1A607F;
+    border: 16px solid aliceblue;
+    border-top: 16px solid goldenrod;
     border-radius: 50%;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+/*
     position: fixed;
     text-align: center;
     top: 40%;
     left: 47%;
+*/
     background-color: black;
-    box-shadow: 5px 5px 30px #4691B2;
+    box-shadow: 1px 1px 30px aliceblue;
+    text-align: center;
 }
 
 @keyframes spin {
@@ -917,13 +890,15 @@ footer span{
 }
 
 .loader-caption {
-    font-family: 'theZains';
+    font-family: var();
     text-align: center;
     font-size: 42px;
+/*
     position: fixed;
     top: 25%;
     left: 46%;
-    text-shadow: 5px 5px 30px #4691B2;
+*/
+/*    text-shadow: 1px 1px 30px aliceblue;*/
 }
 
 
@@ -954,6 +929,11 @@ footer span{
     .c1 h2 a{white-space:normal; }
     .c1 h2{line-height: 1;}
 }
+
+@media screen and (max-width: 800px){
+    
+}
+
 
 @media screen and (max-width: 700px) {
     body {
@@ -1015,7 +995,16 @@ footer span{
         font-size: 16px;
     }
     #music-cont{padding: 40px 0px;}
+    
+    
+    nav ul{font-size: 18px;}
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 600px){
     .profile-pic {
@@ -1074,7 +1063,7 @@ footer span{
     }
     
     #header-bar {
-        padding: 0px !important;
+/*        padding: 0px !important;*/
     }
     
     div.c3 h2 i{
@@ -1092,18 +1081,55 @@ footer span{
         font-size: 100%;
     }
     
+    .links i{
+        font-size: 36px;
+    }
     
+    .links{
+        font-size: 18px;
+    }
 
 }
+
+
+
+@media screen and (max-width: 500px){
+    #social-bar{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #icons{position: fixed; right: 10px; top: 30%;}
+    
+    header .c3{
+        position: fixed; left: 0px; top: 35%;
+        transform: rotateZ(180deg);
+    }
+    
+    header .c3 h2{
+        writing-mode: vertical-rl;
+        
+    }
+    
+/*    header .c1 h2 a{white-space: nowrap !important;}*/
+    
+    #header-bar{min-height: 100px}
+    
+}
+
+
 @media screen and (max-width: 400px){
     #navbar > ul > li a{
         padding: 15px 8px;
-        font-size: 80%;
+        font-size: 14px;
     }
     
     #About p{
         font-size: 16px;
     }
+    
+    .links i{font-size: 32px;}
+    .links{font-size: 12px;}
+    
 }
 
 @media screen and (max-width: 375px){

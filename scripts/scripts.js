@@ -10,7 +10,7 @@ $(document).ready(function(){
             // otherwise change it back to relative
             if (scrollTop > stickyNavTop - 100){ 
                 $('.navbar').addClass('sticky');
-                $('#header-bar').css('padding', '0');
+                $('#header-bar').css('padding', '0px 20px');
                 $('#header-bar').addClass('header-shrink');
                 $('#navbar').addClass('nav-shrink');
              } else {
@@ -123,16 +123,35 @@ $(document).ready(function() {
 
 /*--------LOADER SCREEN-------------*/
 
+//$(window).on('load', function() {
+//    $('.loader').fadeOut();
+//    $('.loader-caption').fadeOut();
+//    $('.loader-bg').delay(350).fadeOut('slow');
+//    $('body').delay(350).css({'overflow':'visible'});
+//});
+
 $(window).on('load', function() {
     $('.loader').fadeOut();
     $('.loader-caption').fadeOut();
     $('.loader-bg').delay(350).fadeOut('slow');
-    $('body').delay(350).css({'overflow':'visible'});
 });
+
+
+
 
 $('.slick').slick({
     infinite: true,
 //    fade: true,
     dots: true,
     autoplay: true,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
 });
+
+
