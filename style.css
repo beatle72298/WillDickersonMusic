@@ -730,7 +730,6 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 }
 
 .modal-logo {
-    font-family: theZains;
     text-align: center;
     font-size: 28px;
     margin: 0 0;
@@ -775,14 +774,15 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 /* Modal Content/Box */
 .modal-content {
   margin: 7% auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  background-color: #00334A;
+/*  border: 1px solid #888; */
+    border-radius: 20px;
+/*  background-color: #00334A;*/
   width: 50%; /* Could be more or less, depending on screen size */
+    background-color: rgba(0,0,0,.8)
 }
 
 #mc_embed_signup{
-    z-index: 51;
-    background:#00334A; 
+    z-index: 51; 
 }
 
 /* The Close Button */
@@ -805,6 +805,7 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 .signup-caption {
     padding: 0% 3%;
     margin: 0px;
+    text-align: center;
 }
 
 .signup-caption p {
@@ -820,18 +821,24 @@ div.clear {
 }
 
 #mc-embedded-subscribe.button{
-    background-color: #1A607F;
-    font-family: 'Knewave', cursive;
+    background-color: darkgoldenrod;
+    font-family: var(--p-2);
     transform: scale(1.5);
-    position: relative;
-    margin-top: 2%;
-    margin-bottom: 3%;
+/*    margin-top: 2%;*/
+/*    margin-bottom: 3%;*/
     box-shadow: 0px 2px 15px black;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
 }
 
 #mc-embedded-subscribe.button:hover {
     background-color: black;
     box-shadow: 0px 2px 15px aliceblue;
+}
+
+
+#mc_embed_signup h2{
+    text-align: center;
 }
 
 /*---------------------------------
@@ -998,6 +1005,15 @@ footer span{
     
     
     nav ul{font-size: 18px;}
+    
+    .modal-content{
+        width: 100%;
+    }
+    
+    .modal-logo{font-size: 24px; margin-bottom: 0px;}
+    .signup-caption p{ font-size: 14px; margin-bottom: 0;}
+    #mc_embed_signup h2{margin: 0;}
+    
 }
 
 
