@@ -341,9 +341,9 @@ nav a.active {
     position: absolute;
      top: 0;
 
-    background-image:url(images/Hero-NoBG.png);
+    background-image:url(images/IMG_0073.PNG);
 /*     mix-blend-mode: luminosity;*/
-     filter: grayscale(100%);
+/*     filter: grayscale(100%);*/
 /*     background-color: blue;*/
 }
 
