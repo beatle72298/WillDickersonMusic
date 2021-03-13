@@ -207,6 +207,11 @@ nav a:hover{
     transition: 0.3 all;
 }
 
+.credits #navbar{
+    position: fixed;
+    width: 100%;
+}
+
 /*-------------------------
 ------HEAD/NAV Dynamics---*/
 .sticky {
@@ -1186,5 +1191,37 @@ footer span{
     
     justify-content: center;
 }
+
+.credit-overlay{
+    background-color: rgba(218,165,32,.8)
+}
+.credits h1{
+    color: black !important;
+    font-size: 48px;
+    margin: 0;
+    animation: stretch 2s infinite alternate ease;
+}
+.credits p{
+    font-size: 28px;
+    line-height: 1.5;
+    animation: stretch 2s infinite alternate ease;
+    white-space: nowrap;
+}
+
+@keyframes stretch{
+    from{letter-spacing: normal;}
+    to{letter-spacing: 2px;}
+}
+
+.credits i{
+    font-size: 24px;
+}
+
+.credits span{
+    font-size: 90%;
+}
+
+
+
 
 
