@@ -669,17 +669,19 @@ a.bit-play-my-city-button:hover, a.bit-rsvp.bit-button:hover, a.bit-offers.bit-b
 
 .profile-pic {
     display: inline-block;
-    background-image: url(images/012221-07663.jpg);
+    background-image: url(images/artist_bio_image.jpg);
     background-size: cover;
     background-position: top center;
     height: 50vh;
     width: 40vh;
     float: left;
-    margin-right: 32px;    
+    margin-right: 32px;
+/*    clear:both;*/
+    margin-bottom: 20px;
 }
 
 #About {
-    min-height: 500px;
+    min-height: 56vh;
 }
 
 /*----------------------------
